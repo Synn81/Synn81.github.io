@@ -3,48 +3,17 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import synn from '@/images/synn.jpg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'The Sae Scroll Prophecies',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'A New debut Dark Fantasy Novel coming soon',
+    link: { href: 'http://gwmauthor.com', label: 'gwmauthor.com' },
+    logo: synn,
   },
-  {
-    name: 'Animaginary',
-    description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
-  },
-  {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+
 ]
 
 function LinkIcon(props) {
@@ -62,15 +31,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Greig Miller</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Things I’ve made or are in progress."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Things I’ve made or are in progress."
+        intro="I’ve worked on many projects over the years, and have more upcoming..."
       >
         <ul
           role="list"
@@ -82,7 +51,7 @@ export default function Projects() {
                 <Image
                   src={project.logo}
                   alt=""
-                  className="h-8 w-8"
+                  className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800"
                   unoptimized
                 />
               </div>
