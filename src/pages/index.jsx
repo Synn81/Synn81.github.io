@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import { useRouter } from 'next/router';
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -111,9 +112,38 @@ function SocialLink({ icon: Icon, ...props }) {
 }
 
 function Newsletter() {
+  const router = useRouter();
+
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // prevent the form from submitting normally
+
+    // get form and form data
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // send data to server
+    const response = await fetch('https://assets.mailerlite.com/jsonp/471716/forms/90539535219295918/subscribe', {
+      method: form.method,
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      // if the response is ok, redirect to the thank you page
+      router.push(`/thank-you`);
+    } else {
+      // handle errors
+      console.error("Newsletter signup failed:", response);
+    }
+  };
   return (
     <form
-      action="/thank-you"
+      onSubmit={handleSubmit}
+      data-code=""
+      method="post"
+      target="/thank-you"
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -125,6 +155,8 @@ function Newsletter() {
       </p>
       <div className="mt-6 flex">
         <input
+          data-inputmask=""
+          name="fields[email]"
           type="email"
           placeholder="Email address"
           aria-label="Email address"
