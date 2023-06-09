@@ -261,13 +261,12 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Greig Miller,
+            Author and Musician.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            A driven and lively character, Greig Miller can often be found enjoying the wonderful UK countryside in his beloved Surrey village. Always obsessed with doing something creative, Greig spent his early years writing and playing music, performing up and down the country, before his knees started to creak and he turned his hand to creative writing. Since growing up with Japanese role-playing games in the 1990s, fantasy has been a genre close to the heart for Greig; his quirky unique take on it may just be that little something different you have been looking for.
+
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
