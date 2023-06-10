@@ -5,6 +5,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import {
+  FacebookIcon,
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
@@ -61,36 +62,44 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Greig Miller. More title here
+              Greig Miller.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et urna eget metus tempor rutrum non ut magna. Aliquam rhoncus magna et metus consequat dictum. Proin id fermentum ex. Mauris non tortor urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam feugiat varius purus id ornare. Curabitur pretium volutpat justo quis convallis. Ut venenatis dolor orci, at volutpat metus dignissim vitae. Integer ut est urna. Aliquam pulvinar urna urna, vel vulputate diam laoreet ut. Pellentesque eu erat non odio ornare viverra ut et nulla.
+                Born in 1981 in Sutton, Surrey, Greig Miller loved fantasy from a young age writing short
+                stories and taking in as much content as possible across a range of platforms – cartoons,
+                books, video games, films and music.
               </p>
               <p>
-                orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et urna eget metus tempor rutrum non ut magna. Aliquam rhoncus magna et metus consequat dictum. Proin id fermentum ex. Mauris non tortor urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam feugiat varius purus id ornare. Curabitur pretium volutpat justo quis convallis. Ut venenatis dolor orci, at volutpat metus dignissim vitae. Integer ut est urna. Aliquam pulvinar urna urna, vel vulputate diam laoreet ut. Pellentesque eu erat non odio ornare viverra ut et nulla.
+                Greig had the idea in his head for the basis of what would become the Sae Scroll Prophecies
+                when he was 18, but before he started to put pen to paper he joined heavy metal band
+                Gridlock Takedown as the vocalist, putting his efforts into that band, playing the London
+                Astoria 2, The Garage, The Underworld and many other venues, gathering a loyal support on
+                the underground scene.
               </p>
               <p>
-                orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et urna eget metus tempor rutrum non ut magna. Aliquam rhoncus magna et metus consequat dictum. Proin id fermentum ex. Mauris non tortor urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam feugiat varius purus id ornare. Curabitur pretium volutpat justo quis convallis. Ut venenatis dolor orci, at volutpat metus dignissim vitae. Integer ut est urna. Aliquam pulvinar urna urna, vel vulputate diam laoreet ut. Pellentesque eu erat non odio ornare viverra ut et nulla.
+                When Gridlock Takedown disbanded, Greig needed a break from music and decided it was
+                the perfect time to write the novel that he’d carried in his head for so long. Fast forward to
+                2023 and The Sae Scroll Prophecies is finished and due for release soon.
               </p>
               <p>
-                orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et urna eget metus tempor rutrum non ut magna. Aliquam rhoncus magna et metus consequat dictum. Proin id fermentum ex. Mauris non tortor urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam feugiat varius purus id ornare. Curabitur pretium volutpat justo quis convallis. Ut venenatis dolor orci, at volutpat metus dignissim vitae. Integer ut est urna. Aliquam pulvinar urna urna, vel vulputate diam laoreet ut. Pellentesque eu erat non odio ornare viverra ut et nulla.
+                In his spare time Greig is a hardcore MMA fan, a long-time fan of pro-wrestling, a lover of
+                travelling and exploring the world, begrudgingly working out and having a beer or two with
+                his friends. He is currently working on a few musical projects, learning how to play the guitar
+                and working on his second book The Toad Rebellion!
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              <SocialLink href="https://twitter.com/AuthorGreigM" icon={TwitterIcon}>
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              <SocialLink href="https://www.instagram.com/gwmauthor/" icon={InstagramIcon} className="mt-4">
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-                Follow on GitHub
-              </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
-                Follow on LinkedIn
+              <SocialLink href="https://www.facebook.com/Greig.Miller.Author" icon={FacebookIcon} className="mt-4">
+                Follow on Facebook
               </SocialLink>
             </ul>
           </div>

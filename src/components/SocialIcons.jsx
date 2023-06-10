@@ -34,3 +34,11 @@ export function LinkedInIcon(props) {
     </svg>
   )
 }
+
+export function FacebookIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path d="M20.5 3H3.5A.5.5 0 003 3.5v17A.5.5 0 003.5 21h9.1v-7.4h-2.5v-2.9h2.5v-2.1c0-2.5 1.5-3.9 3.8-3.9h2.6v2.9h-1.6c-1.2 0-1.4.7-1.4 1.4v1.8h2.9l-.4 2.9h-2.5V21h4.9a.5.5 0 00.5-.5v-17a.5.5 0 00-.5-.5Z" />
+    </svg>
+  )
+}

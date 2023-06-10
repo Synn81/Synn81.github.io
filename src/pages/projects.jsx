@@ -9,7 +9,24 @@ const projects = [
   {
     name: 'The Sae Scroll Prophecies',
     description:
-      'A New debut Dark Fantasy Novel coming soon',
+      'Synn. A name that holds a fragile peace together between the four ruling\n' +
+      'kingdoms. A prophet, so they say, foretold in the Sae Scrolls to ease the\n' +
+      'lands suffering. But Synn has denied the Maker and achieved the opposite\n' +
+      'of what was foreseen… Held in captivity for thirty years, Synn is accused\n' +
+      'of the genocide of Sha’am, a feat he has no memory of. In his bleak\n' +
+      'isolated cell, conjurations of Death and Chaos empower and torment his\n' +
+      'frenzied mind. Whilst Death recreates a daily murder of a woman Synn\n' +
+      'thinks is his mother, Chaos yearns for escape. As the kingdoms begin to\n' +
+      'fray Synn seeks to unravel his mysterious past and claim vengeance\n' +
+      'against the kings who confine, by harnessing the Weapon of God: the\n' +
+      'fabled machination that allegedly wrought Sha’am’s ruin.\n' +
+      'Elsewhere in the land Tellus fights to survive in the Slums of Brehn,\n' +
+      'looking for a way out until a chance encounter provides the opportunity\n' +
+      'she may have just been searching for. Alain struggles to carry the weight\n' +
+      'of responsibility that comes with being the firstborn son in his family and\n' +
+      'Adun tries to stop his foster son, Joh’s imminent self-destruction.\n' +
+      'As the lines between truth, history and fable blur, the only question is:\n' +
+      'who is hero and who is villain?',
     link: { href: 'http://gwmauthor.com', label: 'gwmauthor.com' },
     logo: synn,
   },

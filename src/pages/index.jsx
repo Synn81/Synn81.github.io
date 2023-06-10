@@ -8,9 +8,8 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
-  GitHubIcon,
+  FacebookIcon,
   InstagramIcon,
-  LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
 import synn from '@/images/synn.jpg'
@@ -23,11 +22,17 @@ import { formatDate } from '@/lib/formatDate'
 
 const articles = [
   {
+    title: 'The Sae Scroll Prophecies',
+    slug: 'lorem-ipsum-dolor-sit-amet',
+    date: '2023-06-10',
+    description: 'The Sae Scroll Prophecies - new debut Dark Fantasy Novel coming soon from Greig Miller.',
+  },
+  {
     title: 'Website is live',
     slug: 'lorem-ipsum-dolor-sit-amet',
     date: '2023-06-09',
     description: 'Please subscribe to my newsletter to get updates.',
-  }
+  },
 ]
 
 function MailIcon(props) {
@@ -92,7 +97,7 @@ function ArrowDownIcon(props) {
 function Article({ article }) {
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
+      <Card.Title>
         {article.title}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
@@ -221,7 +226,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[synn, image1, image2, image3, image4, image5].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -266,24 +271,19 @@ export default function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
+              href="https://www.facebook.com/Greig.Miller.Author"
+              aria-label="Follow on Facebook"
+              icon={FacebookIcon}
             />
             <SocialLink
-              href="https://instagram.com"
+              href="https://www.instagram.com/gwmauthor/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://linkedin.com"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
+              href="https://twitter.com/AuthorGreigM"
+              aria-label="Follow on Twitter"
+              icon={TwitterIcon}
             />
           </div>
         </div>
