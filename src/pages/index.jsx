@@ -357,7 +357,7 @@ export default function Home() {
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-xs text-gray-200">
-                          The imprisonment of a child, now a man, has kept an uneasy peace between the four ruling kingdoms. Synn has been held in captivity for thirty years, accused of the genocide of Sha'am with the Weapon of God. Tellus fights to survive in the Slums. Alain struggles to carry the weight of responsibility that comes with being the firstborn son in his family. Adun tries to stop his foster son, Joh's imminent self-destruction. The Sae Scrolls call Synn a prophet, but when he escapes his tower, peace is threatened and the kingdoms come together to seek both Synn and the Weapon of God. As the lines between truth, history and fable blur, the only question is: who is hero and who is villain?
+                          The imprisonment of a child, now a man, has kept an uneasy peace between the four ruling kingdoms. Synn has been held in captivity for thirty years, accused of the genocide of Sha&apos;am with the Weapon of God. Tellus fights to survive in the Slums. Alain struggles to carry the weight of responsibility that comes with being the firstborn son in his family. Adun tries to stop his foster son, Joh&apos;s imminent self-destruction. The Sae Scrolls call Synn a prophet, but when he escapes his tower, peace is threatened and the kingdoms come together to seek both Synn and the Weapon of God. As the lines between truth, history and fable blur, the only question is: who is hero and who is villain?
                         </p>
                       </div>
                     </div>
