@@ -18,9 +18,19 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
+import ssp from '@/images/SSPs.jpeg'
 import { formatDate } from '@/lib/formatDate'
+import { Dialog, Transition } from '@headlessui/react'
+import { BellIcon } from '@heroicons/react/24/outline'
+import {Fragment, useState} from "react";
 
 const articles = [
+  {
+    title: 'The Sae Scroll Prophecies Pre Order Now',
+    slug: 'lorem-ipsum-dolor-sit-amet',
+    date: '2023-11-10',
+    description: 'The Sae Scroll Prophecies - Available for preorder now from Amazon.',
+  },
   {
     title: 'The Sae Scroll Prophecies',
     slug: 'lorem-ipsum-dolor-sit-amet',
@@ -248,6 +258,8 @@ function Photos() {
 }
 
 export default function Home() {
+  const [open, setOpen] = useState(true)
+
   return (
     <>
       <Head>
@@ -266,7 +278,7 @@ export default function Home() {
             Author and Musician.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            A driven and lively character, Greig Miller can often be found enjoying the wonderful UK countryside in his beloved Surrey village. Always obsessed with doing something creative, Greig spent his early years writing and playing music, performing up and down the country, before his knees started to creak and he turned his hand to creative writing. Since growing up with Japanese role-playing games in the 1990s, fantasy has been a genre close to the heart for Greig; his quirky unique take on it may just be that little something different you have been looking for.
+            A driven and lively character always with a smile, Greig Miller can often be found enjoying the wonderful UK countryside in his beloved Surrey village. Always obsessed with doing something creative, Greig spent his early years writing and playing music, performing up and down the country, before his knees started to creak and he turned his hand to creative writing. Since growing up with Japanese role-playing games in the 1990s, fantasy has been a genre close to the heart for Greig; his quirky unique take on it may just be that little something different you have been looking for.
 
           </p>
           <div className="mt-6 flex gap-6">
@@ -302,6 +314,69 @@ export default function Home() {
           </div>
         </div>
       </Container>
+
+      <Transition.Root show={open} as={Fragment}>
+        <Dialog as="div" className="relative z-[1000]" onClose={setOpen}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+            <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
+                <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-gray-700 px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-xl sm:p-6">
+                  <div>
+                    <div className="mx-auto flex w-[200px] items-center justify-center rounded-full bg-green-100">
+                      <Image
+                        src={ssp}
+                        alt=""
+                        sizes="(min-width: 200px) 18rem, 11rem"
+                        className="inset-0"
+                      />
+                    </div>
+                    <div className="mt-3 text-center sm:mt-5">
+                      <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-200">
+                        THE SAE SCROLL PROPHECIES - ORDER NOW @ AMAZON {" "}
+                        <Link className="text-blue-400" href={"https://amzn.eu/d/8sxOQ7f"} passHref>https://amzn.eu/d/8sxOQ7f</Link>
+                      </Dialog.Title>
+                      <div className="mt-2">
+                        <p className="text-xs text-gray-200">
+                          The imprisonment of a child, now a man, has kept an uneasy peace between the four ruling kingdoms. Synn has been held in captivity for thirty years, accused of the genocide of Sha'am with the Weapon of God. Tellus fights to survive in the Slums. Alain struggles to carry the weight of responsibility that comes with being the firstborn son in his family. Adun tries to stop his foster son, Joh's imminent self-destruction. The Sae Scrolls call Synn a prophet, but when he escapes his tower, peace is threatened and the kingdoms come together to seek both Synn and the Weapon of God. As the lines between truth, history and fable blur, the only question is: who is hero and who is villain?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-5 sm:mt-6">
+                    <button
+                      type="button"
+                      className="inline-flex w-full justify-center rounded-md bg-gray-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      onClick={() => setOpen(false)}
+                    >
+                      Got it
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition.Root>
     </>
   )
 }
