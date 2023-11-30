@@ -352,8 +352,14 @@ export default function Home() {
                     </div>
                     <div className="mt-3 text-center sm:mt-5">
                       <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-200">
-                        THE SAE SCROLL PROPHECIES - ORDER NOW @ AMAZON {" "}
-                        <Link className="text-blue-400" href={"https://amzn.eu/d/8sxOQ7f"} passHref>https://amzn.eu/d/8sxOQ7f</Link>
+                        THE SAE SCROLL PROPHECIES - ORDER NOW
+                        <div>
+                          <Link className="text-blue-400" href={"https://amzn.eu/d/8sxOQ7f"} passHref>Amazon</Link> / {" "}
+                          <Link className="text-blue-400" href={"https://pegasuspublishers.com/books/fantasy/the-sae-scroll-prophecies"} passHref>Pegasus</Link> / {" "}
+                          <Link className="text-blue-400" href={"https://www.whsmith.co.uk/products/the-sae-scroll-prophecies/greig-miller/paperback/9781837942190.html"} passHref>WHSmith</Link> / {" "}
+                          <Link className="text-blue-400" href={"https://www.waterstones.com/book/the-sae-scroll-prophecies/greig-miller/9781837942190"} passHref>Waterstones</Link> / {" "}
+                          <Link className="text-blue-400" href={"https://www.foyles.co.uk/book/the-sae-scroll-prophecies/greig-miller/9781837942190"} passHref>Foyles</Link>
+                        </div>
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-xs text-gray-200">
